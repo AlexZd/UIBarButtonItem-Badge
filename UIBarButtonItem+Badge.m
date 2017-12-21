@@ -162,6 +162,7 @@ NSString const *UIBarButtonItem_badgeValueKey = @"UIBarButtonItem_badgeValueKey"
         [self.customView addSubview:lbl];
         lbl.textAlignment = NSTextAlignmentCenter;
     }
+    [lbl.superview bringSubviewToFront:lbl];
     return lbl;
 }
 -(void)setBadge:(UILabel *)badgeLabel
